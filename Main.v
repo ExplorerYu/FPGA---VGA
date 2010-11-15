@@ -40,6 +40,7 @@ module Main(
 		y_counter = 0;
 	end
 	
+	// Always block to drive drawing, {front|back}-doors, and syncs.
 	always @(posedge clock) begin
 		if(x_counter == 1055)
 		begin
